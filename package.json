@@ -1,25 +1,56 @@
 {
-  "name": "ex-term",
-  "version": "1.0.0",
-  "description": "electron demo",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
+  "name": "sudoku",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "main": "public/main.js",
+  "build": {
+    "appId": "some.id.ofyours",
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "category": "your.app.category.type",
+      "iconUrl": "path-to-icon.png"
+    },
+    "mac": {
+      "category": "your.app.category.type",
+      "iconUrl": "path-to-icon.png"
+    }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SnrtIevg/ex-term.git"
+  "dependencies": {
+    "electron": "^8.2.3",
+    "electron-is-dev": "^1.1.0",
+    "lodash": "^4.17.15",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.4.0"
   },
-  "keywords": [
-    "electron"
-  ],
-  "author": "manoo",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/SnrtIevg/ex-term/issues"
-  },
-  "homepage": "https://github.com/SnrtIevg/ex-term#readme",
   "devDependencies": {
-    "electron": "^8.2.3"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "electron-builder": "^21.2.0"
+  },
+  "scripts": {
+    "electron": "electron .",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
