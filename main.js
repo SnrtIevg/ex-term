@@ -22,7 +22,7 @@ const createWindow = () => {
       ? 'http://localhost:3000'
       : path.join(__dirname, '/build/index.html');
   mainWindow.loadURL(startUrl).then(() => {
-    console.log("load success");
+    console.log('load success');
   });
 
   mainWindow.on('closed', function() {
@@ -32,6 +32,6 @@ const createWindow = () => {
 
 app.on('ready', () => createWindow());
 
-app.on('window-all-closed', () => process.platform !== 'darwin' && app.quit() );
+app.on('window-all-closed', () => process.platform !== 'darwin' && app.quit());
 
 app.on('activate', () => mainWindow === null && createWindow());
