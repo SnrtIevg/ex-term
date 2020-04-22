@@ -19,7 +19,7 @@ const createWindow = () => {
    */
   const startUrl =
     process.env.NODE_ENV === 'development'
-      ? 'http://localhost:3000'
+      ? 'http://localhost:3333'
       : path.join(__dirname, '/build/index.html');
   mainWindow.loadURL(startUrl).then(() => {
     console.log('load success');
@@ -30,7 +30,7 @@ const createWindow = () => {
   });
 };
 
-app.on('ready', () => createWindow());
+app.on('ready', () => mainWindow === null && createWindow());
 
 app.on('window-all-closed', () => process.platform !== 'darwin' && app.quit());
 

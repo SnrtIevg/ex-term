@@ -1,3 +1,9 @@
+const path = require('path');
+
+function resolve(dir) {
+  return path.join(__dirname, '.', dir)
+}
+
 module.exports = (config, env) => {
   // 为了方便使用 electron 以及 node.js 相关的 api
   // 需要将 target 设置为 electron-renderer
@@ -5,5 +11,8 @@ module.exports = (config, env) => {
   // 需要在 electron 的环境才能运行(因为支持 node.js 相关的 api)
   // 这一步的操作, 都是为了能与 electron 进行更好的集成
   config.target = 'electron-renderer';
+  config.resolve.alias = {
+    '@': resolve('src')
+  }
   return config;
 };
