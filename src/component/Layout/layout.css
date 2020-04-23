@@ -1,0 +1,32 @@
+.container .left-side {
+  display: flex;
+  min-width: 4vw;
+  width: 12vw;
+  max-width: 24vw;
+  height: 100vh;
+
+  border-right: 1px solid #282c34;
+}
+
+.container .layout-main {
+  display: flex;
+  min-width: 76vw;
+  width: 88vw;
+  max-width: 96vw;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.layout-main .active-bar {
+  display: flex;
+}
+
+.layout-main .main {
+  display: flex;
+}
+
+
+
+
+
