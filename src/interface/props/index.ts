@@ -8,6 +8,3 @@ export interface ActiveBarProps extends BaseProps{
   'tabs': Array<string>
   'onTabClose': onTabClosed<string>
 }
-
-export interface LayoutProps extends ActiveBarProps {
-}
