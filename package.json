@@ -4,8 +4,6 @@
   "private": true,
   "main": "main.js",
   "dependencies": {
-    "@material-ui/core": "^4.9.11",
-    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -13,10 +11,13 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "antd": "^4.2.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "xterm": "^4.6.0",
+    "xterm-addon-web-links": "^0.4.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
